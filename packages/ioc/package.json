@@ -1,0 +1,22 @@
+{
+  "name": "@clark/ioc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/app.js",
+  "types": "dist/app.d.ts",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "rimraf dist && tsup src/app.ts --format esm,cjs --dts"
+  },
+  "keywords": [],
+  "author": "Gideão",
+  "license": "ISC",
+  "devDependencies": {
+    "rimraf": "^5.0.5",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@adonisjs/fold": "^8.2.0"
+  }
+}

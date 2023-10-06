@@ -1,0 +1,27 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --clear-screen=false src/app.ts"
+  },
+  "keywords": [],
+  "author": "Gideão",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/luxon": "^3.3.2",
+    "ts-node": "^10.9.1",
+    "tsx": "^3.13.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@clark/core": "workspace:*",
+    "@clark/orm": "workspace:*",
+    "better-sqlite3": "^8.7.0",
+    "knex": "^2.5.1",
+    "luxon": "^3.4.3",
+    "sqlite3": "^5.1.6"
+  }
+}

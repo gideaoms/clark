@@ -2,7 +2,6 @@
   "name": "@clark/core",
   "version": "1.0.0",
   "private": false,
-  "description": "",
   "main": "dist/app.js",
   "types": "dist/app.d.ts",
   "scripts": {
@@ -17,5 +16,10 @@
     "rimraf": "^5.0.5",
     "tsup": "^7.2.0",
     "typescript": "^5.2.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gideaoms/clark.git"
+  },
+  "description": ""
 }

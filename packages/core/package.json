@@ -1,6 +1,7 @@
 {
   "name": "@clark/core",
   "version": "1.0.0",
+  "private": false,
   "description": "",
   "main": "dist/app.js",
   "types": "dist/app.d.ts",

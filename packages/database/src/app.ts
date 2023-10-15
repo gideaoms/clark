@@ -1,25 +1,10 @@
 import { Logger } from "@adonisjs/logger";
 import { Profiler } from "@adonisjs/profiler";
-import { Emitter } from "@adonisjs/events/build/src/Emitter";
-import { Database } from "@adonisjs/lucid/build/src/Database";
+import { Emitter } from "@adonisjs/events/build/src/Emitter/index.js";
+import { Database } from "@adonisjs/lucid/build/src/Database/index.js";
 import type { DatabaseConfig } from "@ioc:Adonis/Lucid/Database";
 
-// const appRoot = __dirname;
-const appRoot = "/home/gideaoms/Projects/clark/apps/example";
-const database: DatabaseConfig = {
-  connection: "sqlite",
-  connections: {
-    sqlite: {
-      client: "sqlite",
-      connection: {
-        filename: "/home/gideaoms/Projects/clark/apps/example/db.sqlite",
-      },
-      useNullAsDefault: true,
-      healthCheck: false,
-      debug: false,
-    },
-  },
-};
+const appRoot = "";
 const logger = new Logger({
   name: "app-name",
   enabled: true,
@@ -33,4 +18,8 @@ const profiler = new Profiler(appRoot, logger, {
 });
 const emitter = new Emitter();
 
-export default new Database(database, logger, profiler, emitter);
+export default class extends Database {
+  constructor(database: DatabaseConfig) {
+    super(database, logger, profiler, emitter);
+  }
+}

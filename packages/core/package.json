@@ -1,5 +1,5 @@
 {
-  "name": "@clark/core",
+  "name": "@clarkjs/core",
   "version": "1.0.0",
   "private": false,
   "main": "dist/app.js",

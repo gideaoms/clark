@@ -1,12 +1,20 @@
 {
-  "name": "@clark/database",
-  "version": "1.0.0",
+  "name": "@clarkjs/database",
+  "version": "1.0.2",
+  "private": false,
   "description": "",
-  "main": "dist/app.js",
   "types": "dist/app.d.ts",
+  "exports": {
+    "import": "./dist/app.mjs",
+    "require": "./dist/app.js"
+  },
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "dev": "tsc --watch",
-    "build": "rimraf dist && tsup src/app.ts --format esm,cjs --dts"
+    "build": "tsup src/app.ts --format esm,cjs",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [],
   "author": "Gideão",
@@ -18,6 +26,7 @@
     "@adonisjs/profiler": "^6.0.9"
   },
   "devDependencies": {
+    "knex": "^2.5.1",
     "rimraf": "^5.0.5",
     "tsup": "^7.2.0",
     "typescript": "^5.2.2"

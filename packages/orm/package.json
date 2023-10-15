@@ -1,5 +1,5 @@
 {
-  "name": "@clark/orm",
+  "name": "@clarkjs/orm",
   "version": "1.0.0",
   "description": "",
   "main": "dist/app.js",
@@ -14,8 +14,8 @@
   "dependencies": {
     "@adonisjs/core": "^5.9.0",
     "@adonisjs/lucid": "^18.4.2",
-    "@clark/database": "workspace:*",
-    "@clark/ioc": "workspace:*",
+    "@clarkjs/database": "workspace:*",
+    "@clarkjs/ioc": "workspace:*",
     "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
